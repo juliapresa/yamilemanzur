@@ -1,0 +1,102 @@
+body{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    background-color: floralwhite;
+    background-color: rgb(237, 162, 21);
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.imgLibroTamaño{
+    width: 200px;
+    height: 300px;
+}
+.imgLibroTamaño:hover{
+    width: 210px;
+    height: 310px;
+}
+.titulo{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 70px;
+    color: rgb(55, 43, 43);
+    margin-bottom: 0%;
+}
+.subtitulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: oblique;
+    color: rgb(55, 43, 43);
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+.seccionLibrosUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: medium;
+    color: rgb(45, 38, 38);
+    margin-bottom: 3%;
+}
+.seccionLibrosDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: medium;
+    color: rgb(55, 43, 43);
+    margin-bottom: 3%;
+}
+.ancla{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 33%;
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .seccionLibrosUno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-size: medium;
+        color: rgb(45, 38, 38);
+        margin-bottom: 3%;
+    }
+    .seccionLibrosDos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-size: medium;
+        color: rgb(55, 43, 43);
+        margin-bottom: 3%;
+    }
+    .ancla{
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        width: 100%;
+    }
+    .imgLibroTamaño{
+        width: 300px;
+        height: 400px;
+    }
+    .imgLibroTamaño:hover{
+        width: 300px;
+        height: 400px;
+    }
+}
