@@ -53,6 +53,7 @@ body{
         margin-top: 0%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
     .ancla{
         display: flex;
         justify-content: center;
@@ -60,7 +61,14 @@ body{
         text-decoration: none;
     }
     .divInfoImg{
-        margin-bottom: 3%;
+        margin-top: 10%;
+        margin-bottom: 10%;
         margin-right: 0%;
+    }
+    .tituloInfo{
+        margin-top: 10%;
+    }
+    .buttonInicio{
+        margin-top: 3%;
     }
 }
