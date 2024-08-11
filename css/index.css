@@ -10,12 +10,12 @@ body{
     margin-top: 2%;
 }
 .imgLibroTamaño{
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 550px;
 }
 .imgLibroTamaño:hover{
-    width: 210px;
-    height: 310px;
+    width: 410px;
+    height: 560px;
 }
 .titulo{
     text-align: center;
@@ -49,7 +49,7 @@ body{
     color: rgb(45, 38, 38);
     color: floralwhite;
     margin-bottom: 3%;
-    height: 50vh;
+    height: fit-content;
 }
 .seccionLibrosDos{
     display: flex;
