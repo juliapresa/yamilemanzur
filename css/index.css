@@ -49,6 +49,7 @@ body{
     color: rgb(45, 38, 38);
     color: floralwhite;
     margin-bottom: 3%;
+    height: 50vh;
 }
 .seccionLibrosDos{
     display: flex;
@@ -79,6 +80,7 @@ body{
         color: rgb(45, 38, 38);
         color: floralwhite;
         margin-bottom: 3%;
+        height: auto;
     }
     .seccionLibrosDos{
         display: flex;
