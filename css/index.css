@@ -10,12 +10,12 @@ body{
     margin-top: 2%;
 }
 .imgLibroTamaño{
-    width: 400px;
-    height: 550px;
+    width: 360px;
+    height: 540px;
 }
 .imgLibroTamaño:hover{
-    width: 410px;
-    height: 560px;
+    width:370px;
+    height: 550px;
 }
 .titulo{
     text-align: center;
