@@ -2,8 +2,7 @@ body{
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
-    background-color: floralwhite;
-    background-color: rgb(237, 162, 21);
+    background-color: #237162;
 }
 .encabezado{
     display: flex;
@@ -26,6 +25,7 @@ body{
     font-style: oblique;
     font-size: 70px;
     color: rgb(55, 43, 43);
+    color: floralwhite;
     margin-bottom: 0%;
 }
 .subtitulo{
@@ -34,6 +34,7 @@ body{
     font-weight: 900;
     font-style: oblique;
     color: rgb(55, 43, 43);
+    color: floralwhite;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 4%;
@@ -46,6 +47,7 @@ body{
     font-style: normal;
     font-size: medium;
     color: rgb(45, 38, 38);
+    color: floralwhite;
     margin-bottom: 3%;
 }
 .seccionLibrosDos{
@@ -56,12 +58,14 @@ body{
     font-style: normal;
     font-size: medium;
     color: rgb(55, 43, 43);
+    color: floralwhite;
     margin-bottom: 3%;
 }
 .ancla{
     text-decoration: none;
     text-align: center;
     color: black;
+    color: floralwhite;
     width: 33%;
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -73,6 +77,7 @@ body{
         font-style: normal;
         font-size: medium;
         color: rgb(45, 38, 38);
+        color: floralwhite;
         margin-bottom: 3%;
     }
     .seccionLibrosDos{
@@ -83,12 +88,14 @@ body{
         font-style: normal;
         font-size: medium;
         color: rgb(55, 43, 43);
+        color: floralwhite;
         margin-bottom: 3%;
     }
     .ancla{
         text-decoration: none;
         text-align: center;
         color: black;
+        color: floralwhite;
         width: 100%;
     }
     .imgLibroTamaño{
