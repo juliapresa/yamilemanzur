@@ -1,0 +1,170 @@
+:root {
+  --crema: #FAF7F2;
+  --crema-osc: #F0EAE0;
+  --tinta: #2A2622;
+  --tinta-suave: #5C564D;
+  --acento: #8C6A4F;
+  --linea: #E2D9CA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--crema);
+  color: var(--tinta);
+  overflow-x: hidden;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--linea);
+}
+
+.buttonInicio {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--tinta-suave);
+  background: transparent;
+  border: 1px solid var(--linea);
+  border-radius: 2px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.buttonInicio:hover {
+  border-color: var(--acento);
+  color: var(--acento);
+}
+
+.tituloInfo {
+  flex: 1;
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 26px;
+  margin: 0;
+  margin-right: 96px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 40px 100px;
+}
+
+.seccionInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.divInfoImg {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divInfoImg img {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  object-fit: contain;
+  display: block;
+}
+
+.divInfoLibro {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.tituloLibroInfo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0 0 28px;
+  line-height: 1.3;
+}
+
+.fichaTecnica {
+  border-top: 1px solid var(--linea);
+  padding-top: 24px;
+}
+
+.filaFicha {
+  display: flex;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.filaFicha:last-child {
+  border-bottom: none;
+}
+
+.etiquetaFicha {
+  flex: 0 0 130px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--acento);
+  padding-top: 2px;
+}
+
+.valorFicha {
+  flex: 1;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--tinta);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 22px 24px;
+  }
+
+  .tituloInfo {
+    font-size: 19px;
+    margin-right: 0;
+  }
+
+  main {
+    padding: 48px 24px 70px;
+  }
+
+  .seccionInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .divInfoImg {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .divInfoLibro {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .tituloLibroInfo {
+    font-size: 27px;
+    text-align: center;
+  }
+}

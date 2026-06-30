@@ -1,111 +1,179 @@
-body{
-    overflow-x: hidden;
-    margin: 0%;
-    padding: 0%;
-    background-color: #237162;
+:root {
+  --crema: #FAF7F2;
+  --crema-osc: #F0EAE0;
+  --tinta: #2A2622;
+  --tinta-suave: #5C564D;
+  --acento: #8C6A4F;
+  --linea: #E2D9CA;
 }
-.encabezado{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
+
+* {
+  box-sizing: border-box;
 }
-.imgLibroTamaño{
-    width: 360px;
-    height: 540px;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--crema);
+  color: var(--tinta);
+  overflow-x: hidden;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
-.imgLibroTamaño:hover{
-    width:370px;
-    height: 550px;
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 24px 70px;
+  text-align: center;
 }
-.titulo{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: oblique;
-    font-size: 70px;
-    color: rgb(55, 43, 43);
-    color: floralwhite;
-    margin-bottom: 0%;
+
+.titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 58px;
+  letter-spacing: 0.5px;
+  color: var(--tinta);
+  margin: 0;
 }
-.subtitulo{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: oblique;
-    color: rgb(55, 43, 43);
-    color: floralwhite;
-    text-align: center;
-    margin-top: 0%;
-    margin-bottom: 4%;
+
+.linea-firma {
+  width: 70px;
+  height: 1px;
+  background-color: var(--acento);
+  margin: 26px 0 0;
 }
-.seccionLibrosUno{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-size: medium;
-    color: rgb(45, 38, 38);
-    color: floralwhite;
-    margin-bottom: 3%;
-    height: fit-content;
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px 100px;
 }
-.seccionLibrosDos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-size: medium;
-    color: rgb(55, 43, 43);
-    color: floralwhite;
-    margin-bottom: 3%;
+
+.subtitulo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 56px;
 }
-.ancla{
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    color: floralwhite;
-    width: 33%;
+
+.subtitulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 26px;
+  color: var(--tinta-suave);
+  margin: 0;
+  white-space: nowrap;
 }
+
+.subtitulo-wrap .raya {
+  flex: 1;
+  height: 1px;
+  background-color: var(--linea);
+}
+
+.grilla-libros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 36px;
+  margin: 0;
+}
+
+.ancla {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.tarjeta-libro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.marco-imagen {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background-color: var(--crema-osc);
+  border: 1px solid var(--linea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgLibroTamaño {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ancla:hover .imgLibroTamaño {
+  transform: scale(1.035);
+}
+
+.tituloLibro {
+  margin-top: 20px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--tinta);
+  line-height: 1.4;
+}
+
+footer {
+  border-top: 1px solid var(--linea);
+  padding: 30px 24px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--tinta-suave);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grilla-libros {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px 32px;
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
-    .seccionLibrosUno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-size: medium;
-        color: rgb(45, 38, 38);
-        color: floralwhite;
-        margin-bottom: 3%;
-        height: auto;
-    }
-    .seccionLibrosDos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-size: medium;
-        color: rgb(55, 43, 43);
-        color: floralwhite;
-        margin-bottom: 3%;
-    }
-    .ancla{
-        text-decoration: none;
-        text-align: center;
-        color: black;
-        color: floralwhite;
-        width: 100%;
-    }
-    .imgLibroTamaño{
-        width: 300px;
-        height: 400px;
-    }
-    .imgLibroTamaño:hover{
-        width: 300px;
-        height: 400px;
-    }
+  .encabezado {
+    padding: 60px 24px 44px;
+  }
+
+  .titulo {
+    font-size: 38px;
+  }
+
+  main {
+    padding: 0 24px 70px;
+  }
+
+  .subtitulo-wrap {
+    margin-bottom: 36px;
+  }
+
+  .subtitulo {
+    font-size: 21px;
+  }
+
+  .grilla-libros {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .tituloLibro {
+    font-size: 17px;
+  }
 }
