@@ -167,8 +167,12 @@ footer {
   .grilla-libros {
     grid-template-columns: 1fr;
     gap: 40px;
-    max-width: 320px;
+    max-width: 420px; /* antes 320px */
     margin: 0 auto;
+  }
+
+  .marco-imagen {
+    height: 380px; /* antes heredaba 250px del desktop */
   }
 
   .tituloLibro {
